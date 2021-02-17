@@ -16,10 +16,6 @@ function Pathfind() {
     const [Path, setPath] = useState([])
     const [VisitedNodes, setVisitedNodes] = useState([])
 
-    // initialize grid before dom is generated
-    useEffect(() => {
-        initalizeGrid()
-    }, [])
 
     const initalizeGrid = () => {
         const grid = new Array(rows);
@@ -27,7 +23,6 @@ function Pathfind() {
         for (let i = 0; i < rows; i++){
             grid[i] = new Array(cols)
         }
-
         createSpot(grid)
 
         setGrid(grid)
@@ -48,6 +43,11 @@ function Pathfind() {
         setVisitedNodes(path.visitedNodes)
 
     }
+
+    // initialize grid before dom is generated
+    useEffect(() => {
+        initalizeGrid()
+    }, [])
 
     const createSpot = (grid) => {
         for (let i = 0; i < rows; i++){
