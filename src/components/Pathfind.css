@@ -1,6 +1,5 @@
-.wrapper {
-    /* max-width: 80%; */
-    /* margin: auto; */
+h1 {
+    font-size: 60px;
 }
 
 .table-wrapper {
@@ -13,10 +12,10 @@
 .button-wrapper {
     margin: 0 auto;
     display: flex;
-    /* justify-content: space-between; */
     width: 50%;
     align-items: center;
     justify-content: center;
+    font-size: 25px;
 }
 
 .rowWrapper {
@@ -25,7 +24,7 @@
 
 .button {
     text-align: center;
-    height: 20px;
+    height: 30px;
     width: inherit;
     border-radius: none;
     border-bottom: 2px solid cyan;
